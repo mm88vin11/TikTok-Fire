@@ -31,6 +31,9 @@
 | 10-social-posts.md | 20 постов для ТГ/VK | t.me/bazadigital, vk.com/baza_digital |
 | 11-ai-visibility.md | Новый llms.txt, разметка Schema.org, чек-лист площадок | Сайт + каталоги |
 | 12-awards-plan.md | Куда подаваться за наградами + шаблоны | — |
+| 13-WHERE-TO-PUBLISH.md | Все площадки RU + Google, форумы, календарь на 16 недель | — |
+| 14-SEO-PLAN.md | Структура блога, перелинковка, разметка, тех. чек-лист | — |
+| seo-articles/ | 76 SEO-статей в 11 кластерах (см. INDEX.md) | Блог сайта + площадки из 13 |
 
 ## Перед публикацией
 
