@@ -1,0 +1,50 @@
+@font-face{font-family:Onest;font-weight:400;font-display:swap;src:url(/assets/fonts/onest-cyrillic-400-normal.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Onest;font-weight:400;font-display:swap;src:url(/assets/fonts/onest-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Onest;font-weight:600;font-display:swap;src:url(/assets/fonts/onest-cyrillic-600-normal.woff2) format("woff2");unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Onest;font-weight:600;font-display:swap;src:url(/assets/fonts/onest-latin-600-normal.woff2) format("woff2")}
+:root{--bg:#0B0B0D;--fg:#EDEDF0;--mut:#9A9AA6;--line:#26262C;--acc:#C8FF3D;--card:#141418}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.65 Onest,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--fg);text-decoration-color:var(--acc);text-underline-offset:3px}
+a:hover{color:var(--acc)}
+.bh{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:24px;padding:14px max(16px,calc((100vw - 1100px)/2));background:rgba(11,11,13,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bh .logo{font-weight:600;font-size:22px;letter-spacing:.04em;text-decoration:none}
+.bh nav{display:flex;gap:18px;flex:1;overflow-x:auto;scrollbar-width:none}
+.bh nav a{color:var(--mut);text-decoration:none;font-size:15px;white-space:nowrap}
+.bh nav a:hover{color:var(--fg)}
+.btn{display:inline-block;padding:11px 18px;border-radius:999px;background:var(--acc);color:#0B0B0D!important;font-weight:600;font-size:15px;text-decoration:none;white-space:nowrap}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--fg)!important}
+.bm{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+.bm.idx{max-width:1000px}
+.crumbs{font-size:14px;color:var(--mut);margin-bottom:18px}.crumbs a{color:var(--mut)}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.12;font-weight:600;margin:0 0 14px;letter-spacing:-.01em}
+h2{font-size:clamp(23px,3vw,29px);line-height:1.25;font-weight:600;margin:44px 0 12px}
+h3{font-size:21px;margin:30px 0 8px}
+.by{color:var(--mut);font-size:15px;margin-bottom:28px}
+article>p:first-of-type{font-size:20px;color:#fff}
+p,ul,ol{margin:0 0 18px}
+li{margin:6px 0}
+strong{font-weight:600;color:#fff}
+blockquote{margin:24px 0;padding:6px 0 6px 20px;border-left:3px solid var(--acc);color:#fff;font-size:20px}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0}
+.tw{overflow-x:auto;margin:0 0 22px;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:15px;line-height:1.45}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--card);font-weight:600}
+tr:last-child td{border-bottom:0}
+.cta{margin:44px 0 24px;padding:26px;border-radius:20px;background:var(--card);border:1px solid var(--line)}
+.cta .k{margin:0 0 6px;color:var(--acc);font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+.cta .t{font-size:20px;color:#fff}
+.cta p:last-child{margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.author{font-size:15px;color:var(--mut);border-top:1px solid var(--line);padding-top:18px}
+.rel{margin-top:40px}.rel ul{padding-left:20px}
+.lead{font-size:20px;color:var(--mut);max-width:760px}
+.cat ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.cat li{margin:0;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.cat li a{font-weight:600;text-decoration:none;display:block;margin-bottom:6px;line-height:1.35}
+.cat li span{display:block;color:var(--mut);font-size:14px;line-height:1.45}
+.bf{border-top:1px solid var(--line);padding:28px max(16px,calc((100vw - 1100px)/2)) 40px;color:var(--mut);font-size:14px}
+.bf a{color:var(--mut)}.bf .req{font-size:12px;opacity:.7}
+@media (max-width:760px){.bh{gap:12px}.bh nav{display:none}body{font-size:17px}}
